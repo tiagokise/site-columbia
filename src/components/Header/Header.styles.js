@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import bgApresentation from '../../images/img_columbia.svg';
-
+import LogoWhite from '../Logo/LogoWhite'
 
 export const Header = styled.div`
   width: 100vw;
@@ -12,17 +12,53 @@ export const ApresentationImage = styled.div`
   height: 80vh;
   grid-area: bg;
   background: url(${bgApresentation});
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
   position: relative;
+  animation-duration: 3s;
+  animation-name: bgsize;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  @keyframes bgsize {
+    from {
+      background-size: 230%;
+    }
+    to {
+      background-size: 280%;
+    }
+  }
 
   @media screen{
     @media (min-width: 1024px){
       height: 400px;
+      background-position: center;
+
+      @keyframes bgsize {
+        from {
+          background-size: 100%;
+        }
+        to {
+          background-size: 140%;
+        }
+      }
     }
   }
+
+  
+  >svg{
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%);
+
+  }
+
+`
+
+export const HeaderLogo = styled(LogoWhite)`
 
 `
 

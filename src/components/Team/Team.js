@@ -10,7 +10,7 @@ const users = [
   },
   {
     name: 'Joice Lima',
-    occupation: 'Front End',
+    occupation: 'Front End Developer',
     picture: joice,
 
   },

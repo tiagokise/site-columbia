@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Team = styled.div`
   position: relative;
-  padding: 40px 20px 20px 20px;
+  padding: 14vw 20px 20px 20px;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,12 @@ export const Team = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   gap: 20px;
+
+  @media screen{
+    @media (min-width: 520px){
+      padding: 80px 20px 20px 20px;
+    }
+  }
 `;
 
 export const TeamTitle = styled.h1`
