@@ -4,9 +4,9 @@ import bgApresentation from '../../images/img_columbia.svg';
 
 export const Header = styled.div`
   width: 100vw;
-  `;
+  margin-bottom: 20px;
 
-
+`;
 
 export const ApresentationImage = styled.div`
   height: 80vh;

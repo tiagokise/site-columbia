@@ -2,39 +2,72 @@ import styled from 'styled-components';
 
 
 export const Team = styled.div`
-  padding: 20px;
+  position: relative;
+  padding: 40px 20px 20px 20px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
 `;
+
+export const TeamTitle = styled.h1`
+  font-size: 9vw;
+  color: blueviolet;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0px;
+
+  @media screen {
+    @media (min-width: 520px){
+      font-size: 50px;
+    }
+  }
+`
 
 export const UserCard = styled.div`
   width: 100%;
-  height: 200px;
-  border: 1px solid black;
-  display: grid;
-  grid-template-areas: 'pic infos';
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: 1fr;
+  height: auto;
+  max-width: 385px;
+  display: flex;
+  flex-direction: column;
   position: relative;
+  padding: 20px 0;
+  flex: 1;
+  margin: 0 auto;
 `;
 
 export const UserPicture = styled.img`
-  display: block;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  width: 180px;
+  height: 180px;
+  margin: auto;
   object-fit: cover;
   grid-area: pic;
+  border-radius: 50%;
+
+  @media screen{
+    @media (min-width: 1024px){
+      width: 250px;
+      height: 250px;
+
+    }
+  }
 `
 
 export const UserInfos = styled.div`
-  grid-area: infos;
 
 `
 
 export const UserName = styled.p`
-  grid-area: name;
-
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
 `
 
 export const UserOccupation = styled.p`
-  grid-area: uccupation;
 
 `

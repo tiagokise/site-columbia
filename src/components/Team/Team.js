@@ -19,6 +19,7 @@ const users = [
 export default function Header(){
   return(
    <S.Team>
+     <S.TeamTitle>Tripulação</S.TeamTitle>
      {users.map((user) => 
       <S.UserCard>
         <S.UserPicture src={user.picture}/>
