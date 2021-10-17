@@ -5,7 +5,7 @@ import LogoWhite from '../Logo/LogoWhite';
 export const Footer = styled.div`
   width: 100vw;
   margin-bottom: 20px;
-  background: blueviolet;
+  background: darkblue;
   height: 100px;
   position: absolute;
   display: flex;
