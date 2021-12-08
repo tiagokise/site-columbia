@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import imageMission from '../../images/laptop_mock.png'
 
 export const Mission = styled.div`
   margin-bottom: 20px;
@@ -52,8 +53,31 @@ export const MissionText = styled.p`
     font-size: 22px;
   }
 `
-
-export const MissionImage = styled.img`
-  width: 100%;
+export const MissionImageBg = styled.div`
+  background-image: url(${imageMission});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   grid-area: image;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+
+  @media (min-width: 1024px){
+    width: 540px;
+    height: 340px;
+  }
+  cursor: pointer;
+`
+export const MissionSite = styled.img`
+  width: 72%;
+  grid-area: image;
+  position: relative;
+  top: 25px;
+  z-index: -1;
+
+  @media (min-width: 1024px){
+    top: 38px;
+  }
 `
